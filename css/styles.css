@@ -1,0 +1,251 @@
+/********************************************************************************************
+*** ¡1 - Page formatting
+***      Body and sections
+*** ¡2 - Text formatting
+*** ¡3 - Carousel formating
+*** ¡4 - Image formating     
+*** ¡5 - Button formatting
+*** ¡6 - Navigation Bar formating  
+*** ¡7 - Formating for different devices      
+***
+*** Default site colors
+*** Yellow      #FCD116
+*** Blue        #00A7E9
+*** Red         #CE1126
+*** Taupe       #E1EEDD
+***
+***
+*** CSS Styling rules and others
+*** 16px = 100% = 1em -> px is a static sizing method whereas the others are dynamic
+***
+*** ID selectors -> Needs to be unique for each item inside a single page
+***              -> Only one single ID can be provided for each item
+***              -> Keep use to a minimum (section, carousel)
+***
+********************** CSS priority handling ************************************************
+*** 1) Inline CSS         |      ID's           |    Inline CSS
+*** 2) Internal CSS       |      Classes        |    #ID's
+*** 3) External CSS       |      Standard       |    .Class
+*** 4)                                          |    <Tag>
+*********************************************************************************************
+*********************************************************************************************
+*** ¡1 - Page formating                          
+********************************************************************************************/
+body {
+    margin: 0;
+    font-family: 'Almarai', sans-serif;
+    font-size: 1.3rem;
+}
+
+.general-for-page {
+    margin-top: 0;
+    padding-top: 90px;
+    text-align: center;
+}
+
+/*** Sections  */
+#title {
+    background-color: #FCD116;
+}
+
+#introduction {
+    background-color: #00A7E9;
+}
+
+#bottom {
+    background-color: #E1EEDD;
+}
+
+#contact {
+    margin-top: 32px;
+}
+
+#footer {
+    margin-top: 64px;
+}
+
+#tax {
+    text-align: end;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+#coppyright {
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+/********************************************************************************************
+*** ¡2 - Text formating                       
+********************************************************************************************/
+/*** Heading */
+.heading1-general {
+    color: #CE1126;
+    margin: 0 auto 48px 0;
+    font-family: 'Marck Script', cursive;
+    font-size: 6rem;
+    font-weight: bolder;
+}
+
+.heading1-black {
+    color: black;
+    margin: 0 auto 64px 0;
+    font-family: 'Marck Script', cursive;
+    font-size: 6rem;
+    font-weight: bolder;
+}
+
+.headings-general {
+    color: #CE1126;
+    font-weight: bolder;
+}
+
+.headings-black {
+    color: black;
+    font-weight: bolder;
+}
+
+h4 {
+    opacity: 0.5;
+}
+
+/*** Aligning */
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+.text-bottom-margin {
+    margin-bottom: 50px;
+}
+
+.text-top-margin {
+    margin-top: 50px;
+}
+
+/********************************************************************************************
+*** ¡3 - Carousel formating                         
+********************************************************************************************/
+/* Rows that act like tables */
+.row-centered {
+    margin: 48px auto 48px auto;
+}
+
+.row-no-right-margin {
+    margin-right: 0;
+}
+
+.row-other-skills {
+    width: 50%;
+    margin: auto;
+}
+
+/********************************************************************************************
+*** ¡4 - Image formating                         
+********************************************************************************************/
+.logo-general {
+    width: 300px;
+    margin: 128px auto 64px auto;
+}
+
+.logo-skills {
+    width: 400px;
+    margin: 16px auto 64px auto;
+}
+
+/********************************************************************************************
+*** ¡5 - Button formating                         
+********************************************************************************************/
+.btn {
+    background: #ce1127;
+    background-image: -webkit-linear-gradient(top, #ce1127, #660f19);
+    background-image: -moz-linear-gradient(top, #ce1127, #660f19);
+    /*background-image: -ms-linear-gradient(top, #ce1127, #660f19);*/
+    background-image: -o-linear-gradient(top, #ce1127, #660f19);
+    background-image: linear-gradient(to bottom, #ce1127, #660f19);
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+    font-family: 'Almarai', sans-serif;
+    color: black;
+    font-size: 24px;
+    padding: 0 20px 10px 20px;
+    text-decoration: none;
+}
+
+    .btn:hover {
+        background: #CE1126;
+        background-image: -webkit-linear-gradient(top, #CE1126, #961020);
+        background-image: -moz-linear-gradient(top, #CE1126, #961020);
+        /*background-image: -ms-linear-gradient(top, #CE1126, #961020);*/
+        background-image: -o-linear-gradient(top, #CE1126, #961020);
+        background-image: linear-gradient(to bottom, #CE1126, #961020);
+        color: white;
+        text-decoration: none;
+    }
+
+/********************************************************************************************
+*** ¡6 - Navigation Bar formating                         
+********************************************************************************************/
+.navbar-nav {
+    --bs-nav-link-color: #CE1126;
+}
+
+.nav-item {
+    padding: 32px 16px 0 16px;
+}
+
+.nav-link {
+    opacity: 0.5;
+}
+
+/********************************************************************************************
+*** ¡7 - Formating for different devices                         
+********************************************************************************************/
+@media (max-width: 800px) {
+    #contact {
+        margin-top: 0;
+    }
+
+    #footer {
+        margin-top: 32px;
+    }
+
+    #copyright {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #tax {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .general-for-page{
+        font-size: 90%;
+    }
+
+    .heading1-general {
+        font-size: 250%;
+        margin: 0 auto 48px 0;
+    }
+
+    .heading1-black {
+        font-size: 250%;
+        margin: 0 auto 48px 0;
+    }
+
+    .logo-general {
+        width: 350px;
+        margin: 124px auto 64px auto;
+    }
+
+    .logo-skills {
+        width: 350px;
+    }
+
+    .text-bottom-margin {
+        margin-bottom: 32px;
+    }
+}

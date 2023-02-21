@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Needed for @media statement to work, build screens for different devices --> 
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>HG's Place</title>
+    <!-- Icon in header tab of the page -->
+    <link rel="icon" type="image/x-icon" href="headerIcon.ico" />
+    <!-- Link to Bootstrap CSS, very powerfull to build the required layout-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Google API's -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Add to Bootstrap JS, very powerfull functions for a dynamic and responsive site -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- The carousel need the version below to work -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- External fonts, the visitors browser will navigate and use these fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&family=Marck+Script&display=swap" rel="stylesheet">
+    <!-- Site specific styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- TOP section of the page -->
+    <section id="title">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarTogglerDemo01" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://harrie-delaat.outsystemscloud.com/ContactForm/Contact?_ts=638120941773052070">Contact me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Expertise area
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://harrie-delaat.outsystemscloud.com/ShowDocument/Documents/HaLa%20SAP%20Consultant%20-%20EN.pdf">SAP</a></li>
+                                <li><a class="dropdown-item" href="https://harrie-delaat.outsystemscloud.com/ShowDocument/Documents/HaLa%20Outsystems%20Consultant%20-%20EN.pdf">Outsystems</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#other">Security specialist</a></li>
+                                <li><a class="dropdown-item" href="#other">Web developer</a></li>
+                                <li><a class="dropdown-item" href="#other">Python</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#other">Dog educator</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" style="color: #FCD116" href="#">Only for layout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Title area -->
+            <div class="general-for-page">
+                <h1 class="heading1-general">I'm Harrie.</h1>
+                <div id="title-carousel" class="carousel slide" data-ride="carousel" data-interval="2500" data-pause="hover">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h3 class="headings-general">SAP Netweaver consultant</h3>
+                        </div>
+                        <div class="carousel-item">
+                            <h3 class="headings-general">Outsystems consultant</h3>
+                        </div>
+                        <div class="carousel-item">
+                            <h3 class="headings-general">Python developer</h3>
+                        </div>
+                        <div class="carousel-item">
+                            <h3 class="headings-general">Web developer</h3>
+                        </div>
+                        <div class="carousel-item">
+                            <h3 class="headings-general">Security developer</h3>
+                        </div>
+                        <div class="carousel-item">
+                            <h3 class="headings-general">Dog educator</h3>
+                        </div>
+                    </div>
+                </div>
+                <img class="logo-general" src="images/logo.png" />
+            </div>
+        </div>
+    </section>
+
+    <!-- CENTER section of the page -->
+    <!-- Small introduction -->
+    <section id="introduction">
+        <div class="general-for-page center-of-page">
+            <h1 class="heading1-black">Hi.</h1>
+            <h3 class="headings-black">
+                I am a software developer <br />
+                based in Chetumal, M&eacute;xico. <br /><br />
+            </h3>
+            My passion for programming started at a young <br />
+            age and got a boost when I was taught <br />
+            at college. The teacher in question was <br />
+            very eager to share his knowledge, <br />
+            gained at NASA, <br />
+            with the "new" generation of programmers. <br />
+            <img class="logo-general" src="images/logo.png" />
+        </div>
+    </section>
+
+    <!-- BOTTOM section of the page -->
+    <section id="bottom" class="general-for-page">
+        <!-- SAP Consultant part -->
+        <section id="sap">
+            <div class="container-fluid">
+                <h1 class="heading1-general">What I can do.</h1>
+                <div class="row row-centered row-no-right-margin">
+                    <div class="col-lg-2 col-md-12">
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <img class="logo-skills" src="images/logo sap.png" />
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <h3 class="headings-general">Further perfecting your SAP system(s).</h3> <br />
+                        I have more than 15 years of experience <br />
+                        as a SAP Netweaver consultant. <br />
+                        During that period I have worked in a wide variety <br />
+                        of branches and SAP modules. <br /><br />
+                        <a href="https://harrie-delaat.outsystemscloud.com/ShowDocument/Documents/HaLa%20SAP%20Consultant%20-%20EN.pdf">Show me more!</a>
+                    </div>
+                    <div class="col-lg-1 col-md-12">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outsystems Consultant part -->
+        <section id="outsystems">
+            <div class="container-fluid">
+                <div class="row row-centered row-no-right-margin">
+                    <div class="col-lg-2 col-md-12 order-1 order-md-1">
+                    </div>
+                    <div class="col-lg-4 col-md-12 order-3 order-md-2" style="padding-right: 0">
+                        <h3 class="headings-general">Assist with all your Outsystems requirements.</h3> <br />
+                        Since 2018 I am working with Outsystems. <br />
+                        During that period I obtained several certificates. <br />
+                        For my company I have developed various usefull applications. <br /><br />
+                        <a href="https://harrie-delaat.outsystemscloud.com/ShowDocument/Documents/HaLa%20Outsystems%20Consultant%20-%20EN.pdf">Show me more!</a>
+                    </div>
+                    <div class="col-lg-4 col-md-12 order-2 order-md-3">
+                        <img class="logo-skills" src="images/logo outsystems.png" />
+                    </div>
+                    <div class="col-lg-2 col-md-12 order-4 order-md-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other skills to mention -->
+        <section id="other">
+            <div class="container-fluid row row-no-right-margin row-other-skills">
+                <!-- 'sm' medium size (and above) screens -->
+                <!-- 'md' medium size (and above) screens -->
+                <!-- 'lg' large size (and above) screens -->
+                <!-- You can combine the rules from big to small -->
+                <!-- There are 12 columns in a screen, col-md-3 -> 4 columns span 3 columns (12/3) -->
+                <div class="col-md-3">
+                    <h6 class="headings-general">Support with your security scan.</h6>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="headings-general">Build and maintain your website.</h6>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="headings-general">Assist with your Python applications.</h6>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="headings-general">Overcome your dogs unwanted behaviour.</h6>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action, get in thouch -->
+        <section id="contact">
+            <h3 class="headings-general text-top-margin">Let's get in touch if:</h3>
+            <h5 class="heading-text-color text-bottom-margin">
+                you are interested in a complete resume or <br />
+                you want to receive more information or <br />
+                you want to ask about my availability.
+            </h5>
+            <a class="btn" href="https://harrie-delaat.outsystemscloud.com/ContactForm/Contact?_ts=638120941773052070">Go to the form</a>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p id="taxes">
+            </p>
+            <p id="tax">
+                KvK-nummer: 83019855.<br />
+                Btw-id: NL003763738B92.
+            </p>
+            <p id="copyright" class="no-bottom-margin">
+                &#169; 2023, HG's Place. All rights reserved.
+            </p>
+        </footer>
+    </section>
+</body>
+</html>
